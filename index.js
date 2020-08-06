@@ -32,8 +32,9 @@ async function generateAddresses() {
 }
 
 async function sendTx(privateKey) {
-    const account = web3.eth.accounts.privateKeyToAccount(privateKey);
-    const amount = '0.0001';
+    const account = web3.eth.accounts.privateKeyToAccount(privateKey)
+    // web3js wants all numbers to be passed as strings or BN instances to avoid precision errors
+    const amount = '0.0001' 
     const destAddress = '0x96C32BD226B4A81A81c6159a139c05bd7C7C993d'
     const gasLimit = '21000'
     const gasPrice = '3' // Gwei
