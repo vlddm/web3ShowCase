@@ -1,0 +1,11 @@
+{
+  "name": "web3ShowCase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bip32": "^2.0.5",
+    "bip39": "^3.0.2",
+    "web3": "^1.2.11"
+  }
+}
